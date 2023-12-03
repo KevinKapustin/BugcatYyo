@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListadoVentas">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="393dp"
+        android:layout_height="89dp"
+        android:background="#FF0000"
+        android:backgroundTint="#00BCD4"
+        android:gravity="center"
+        android:text="  Listado  de Ventas"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3pt">
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15pt"
+            android:text="Usuario"
+            android:textAlignment="center"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20pt"
+            android:layout_weight="1"
+            android:text="Fecha"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4pt"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/ventas_item"
+        />
+
+</LinearLayout>
